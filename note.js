@@ -23,15 +23,11 @@ function attacks(persoAttacking,persoAttacked){
     }  
 }
 
-let tour = true
 console.log("La chasse sauvage a:",personnage2.life,"points de vie")
 console.log("Geralt a:",personnage1.life,"points de vie")
 while(personnage1.life>0 && personnage2.life>0){
-   if(tour){
     attacks(personnage1,personnage2)
-   }else{ 
-    attacks(personnage2,personnage1)}
-    tour = !tour
+    attacks(personnage2,personnage1)
 }
 
 if(personnage1.life<=0){
@@ -39,3 +35,4 @@ if(personnage1.life<=0){
 }else{
     console.log(personnage1.name,"a vaincu",personnage2.name)
     }
+
