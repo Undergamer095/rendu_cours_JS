@@ -1,0 +1,256 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(faille_invocateur.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+/*Header*/
+header {
+  height: auto; 
+  background: transparent; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+}
+
+/*Fonction recherche alignée*/
+.recherche1{
+    margin-top: 30px;
+    margin-left: 50px;
+    display:flex;
+    justify-content: center;
+}
+.recherche1 input {
+    width: 400px;
+    border-radius: 50px;
+    border: 2px solid #C8AA6E;
+    font-size: 50px;
+    text-align: center;
+}
+
+.logo{
+    justify-content: flex-start;
+    object-fit:contain;
+    width: 150px;
+}
+/* Menu pour le header*/
+.menu_header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(150%);
+    transition:0.3s;
+    flex-direction: column;
+}
+.active{
+    transform: translateX(-50%);
+}
+.menu_header ul{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+}
+.menu_header a{
+    text-decoration: none;
+    color:#C8AA6E;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+}
+.menu_header a:hover{
+    opacity:0.6 ;
+}
+/*Boutton menu sombre*/
+.button img{
+    width: 40px;
+    height: auto;
+    margin-left: 50px;
+}
+.button{
+    margin-top: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 0.6;
+}
+/*Bouton menu burger*/
+.menu_button{
+    font-size: 40px;
+    margin-right: 200px;
+    margin-top: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.menu_button:hover{
+    opacity: 0.6;
+}
+/* Main*/
+
+/* Menu pour le main*/
+.menu_main ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+.menu_main a{
+    text-decoration: none;
+    background-color: transparent;
+    color:#C8AA6E;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px black;
+}
+.menu_main a:hover{
+    opacity: 0.6;
+}
+.carte{
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+/*Image carte main*/
+.annie,.maitre,.jinx{
+    width: 400px;
+    display: inline-block;
+}
+.annie:hover,.maitre:hover,.jinx:hover{
+    opacity: 0.6;
+}
+/*fleche carte*/
+.arrow {
+    text-decoration: none;
+    background-color: transparent;
+    margin-top: 200px;
+    font-size: 100px;
+    color: #C8AA6E;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+.arrow:hover{
+    opacity: 0.6;
+}
+/*Citation des personnages*/
+.citation{
+    background-color: rgb(61, 61, 61);
+    color:#C8AA6E;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.citation a{
+    text-decoration: none;
+    color:#C8AA6E;
+    text-shadow: 1px 1px 2px black;
+    font-size: 20px;
+}
+.citation h2{
+    margin-right: 50px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.citation a:hover{
+    opacity: 0.6;
+}
+/*fleche citation*/
+.arrow_cit{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 50px;
+    color: #C8AA6E;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer; 
+}
+.arrow_cit:hover{
+    opacity: 0.6;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px 30px;
+}
+/*logo LinkedIn*/
+.logo_footer1 img{
+
+    object-fit: contain;
+    max-height: 60px;
+    width: auto;
+}
+.logo_footer1 a:hover{
+    opacity: 0.6;
+}
+/*logo Riot*/
+.logo_footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_footer2 img{
+    object-fit: contain;
+    max-height: 60px;
+    width: auto;
+}
+.logo_footer2 img:hover {
+  transform: scale(1.05);
+}
+.credit h1{
+    font-size: 10px;
+    text-align: right;
+    color: #C8AA6E;
+    text-shadow: 1px 1px 2px black;
+}
+/*Page de login*/
+.log_in {
+    display: flex;
+    margin: 150px auto;
+    flex-direction: column;
+    width: 600px;
+    padding: 30px;
+    border: 2px solid #C8AA6E;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.log_in input {
+    margin: 15px 0;
+    height: 60px;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    border: 2px solid #C8AA6E;
+    background-color: #1a1a1a;
+    color: #C8AA6E;
+}
+.dark_mode{
+    background-image: none;
+    background-color: #0e0e0e;
+    color: #C8AA6E;
+}
+.dark_mode .carte,
+.dark_mode .citation {
+    background-color: #0e0e0e;
+}
+.dark_mode .button{
+    filter: invert(1) hue-rotate(180deg);
+}
+.dark_mode .menu_button{
+    color:#C8AA6E
+}
